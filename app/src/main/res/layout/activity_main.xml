@@ -65,7 +65,7 @@
     <EditText
         android:layout_below="@id/ip_address"
         android:id="@+id/et_user_name"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
@@ -74,7 +74,7 @@
     <EditText
         android:layout_below="@id/et_user_name"
         android:id="@+id/et_portnumber"
-        android:layout_width="110dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
@@ -85,7 +85,7 @@
         android:layout_below="@id/et_portnumber"
         android:layout_centerHorizontal="true"
         android:id="@+id/et_host_password"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="host password"
         android:inputType="textPassword"

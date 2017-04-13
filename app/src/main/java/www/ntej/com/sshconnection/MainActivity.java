@@ -203,14 +203,14 @@ public class MainActivity extends AppCompatActivity {
                     //SSH Channel
                     ChannelExec channel = (ChannelExec) session.openChannel("exec");
                     BufferedReader in = new BufferedReader(new InputStreamReader(channel.getInputStream()));
-                    channel.setCommand("python ./light_sensor.py");
+                    channel.setCommand("python ./helloworld_loop.py");
                     channel.connect();
 
                     String msg =null;
                     double i =0;
                     while ((msg = in.readLine())!=null)
                     {
-                        Log.i("MyActivity","LDR_value("+i+"):"+msg);
+                        Log.i("MyActivity",msg);
                         i++;
                     }
                     // stops here infinite result

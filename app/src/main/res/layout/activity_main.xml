@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/ip_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+    <EditText
+        android:id="@+id/et_ipaddress_field1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:inputType="number"
+        />
+        <TextView
+            android:text="."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_ipaddress_field2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:inputType="number"
+        />
+        <TextView
+            android:text="."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_ipaddress_field3"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:inputType="number"
+        />
+        <TextView
+            android:text="."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_ipaddress_field4"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:inputType="number"
+       />
+        <TextView
+            android:text="."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_below="@id/ip_address"
+        android:id="@+id/et_user_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:hint="user-name"/>
+
+    <EditText
+        android:layout_below="@id/et_user_name"
+        android:id="@+id/et_portnumber"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:hint="port-number"
+        />
+
+    <EditText
+        android:layout_below="@id/et_portnumber"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/et_host_password"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="host password"
+        android:inputType="textPassword"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_below="@+id/et_host_password"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make SSH Connection"
+        android:id="@+id/btn_connection"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/tv_result_titile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_connection"
+        android:layout_centerInParent="true"
+        android:text="ConnectionStatus:"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_result_titile"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
+        android:textAllCaps="true"
+        android:textAlignment="center"/>
+
+
+    </RelativeLayout>
